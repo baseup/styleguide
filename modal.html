@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+</html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/example.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+
+
+
+  <nav class="navbar navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">BaseUp Style Guide</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 ">
+        <div class="menu">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="color.html">Color</a>
+              <ul>
+                <li><a href="color.html#primary">Primary colors</a></li>
+                <li><a href="color.html#secondary">Secondary colors</a></li>
+                <li><a href="color.html#neutrals">Neutrals colors</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="grids.html">Grid System</a>
+              <ul>
+                <li><a href="grids.html#responsive-columns">Responsive Columns</a></li>
+                <li><a href="grids.html#nesting">Nesting</a></li>
+                <li><a href="grids.html#no-gutters">No gutters</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="typography.html">Typography</a>
+              <ul>
+                <li><a href="typography.html#typefaces">Typefaces</a></li>
+                <li><a href="typography.html#paragraphs">Paragraphs</a></li>
+                <li><a href="typography.html#headings">Headings</a></li>
+                <li><a href="typography.html#lead">Lead copy</a></li>
+                <li><a href="typography.html#blockquotes">Blockquotes</a></li>
+                <li><a href="typography.html#inline-text">Inline Text</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="forms.html">Forms</a>
+              <ul>
+                <li><a href="forms.html#form-controls">Form controls</a></li>
+                <li><a href="forms.html#form-layouts">Form Layouts</a></li>
+                <li><a href="forms.html#buttons">Buttons</a></li>
+                <li><a href="forms.html#textual-inputs">Textual Inputs</a></li>
+                <li><a href="forms.html#checkboxes">Checkboxes and Radios</a></li>
+                <li><a href="forms.html#static-controls">Static Controls</a></li>
+                <li><a href="forms.html#help-text">Help Text</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="table.html">Tables</a>
+              <ul>
+                <li><a href="table.html#basic">Basic</a></li>
+                <li><a href="table.html#striped">Striped Rows</a></li>
+                <li><a href="table.html#bordered">Bordered Table</a></li>
+                <li><a href="table.html#hoverable">Hoverable Rows</a></li>
+                <li><a href="table.html#condensed">Condensed Table</a></li>
+                <li><a href="table.html#responsive">Responsive Table</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item active">
+              <a href="modal.html">Modal</a>
+              <ul>
+                <li><a href="modal.html#components">Components</a></li>
+                <li><a href="modal.html#live">Live Demo</a></li>
+                <li><a href="modal.html#usage">Usage</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="utilities.html">Utilities</a>
+              <ul>
+                <li><a href="utilities.html#display">Display Property</a></li>
+                <li><a href="utilities.html#borders">Borders</a></li>
+                <li><a href="utilities.html#spacing">Spacing</a></li>
+                <li><a href="utilities.html#flexbox">Flexbox</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-lg-9">
+        <h1>Modal</h1>
+        <hr>
+
+        <h2 id="components">Modal components <a href="#components"><i class="ti-link"></i></a></h2>
+        <p>Below is a static modal example. Included are the modal header,
+          modal body, and modal footer.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/hnhj05db/5/embed/result,html/"></script>
+        <br>
+        <br>
+        <p>How it works:</p>
+        <ul>
+          <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document
+            and remove scroll from the <code>&lt;body&gt;</code> so that modal content scrolls instead.</li>
+          <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
+          <li>We only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
+          <li>Modals use <code>position: fixed</code>
+            , which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid
+            potential interference from other elements. You’ll likely run into issues when nesting a <code>.modal</code> within another fixed element.</li>
+        </ul>
+        <br>
+        <br>
+
+        <h2 id="live-demo">Live demo <a href="#live-demo"><i class="ti-link"></i></a></h2>
+        <p>Toggle a working modal demo by clicking the button below.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/eaqnxzmv/3/embed/result,html/"></script>
+        <br>
+        <br>
+
+
+        <h2 id="usage">Usage <a href="#usage"><i class="ti-link"></i></a></h2>
+        <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code>
+          to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals
+          when clicking outside the modal.</p>
+        <h3>Via data attributes</h3>
+        <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/4yar8846/1/embed/html/"></script>
+        <h3>Via JavaScript</h3>
+        <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+        <script async="" src="//jsfiddle.net/markbaseup/4yar8846/2/embed/js/"></script>
+        <h3>Options</h3>
+        <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>.</p>
+        <table class="table table-bordered table-striped">
+          <tbody><tr>
+            <td><strong>Name</strong></td>
+            <td><strong>Type</strong></td>
+            <td><strong>Default</strong></td>
+            <td><strong>Description</strong></td>
+          </tr>
+          <tr>
+            <td>backdrop</td>
+            <td>boolean or the string <code>'static'</code></td>
+            <td>true</td>
+            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+          </tr>
+          <tr>
+            <td>keyboard</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>Closes the modal when escape key is pressed</td>
+          </tr>
+          <tr>
+            <td>focus</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>Puts the focus on the modal when initialized.</td>
+          </tr>
+          <tr>
+            <td>show</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>Shows the modal when initialized.</td>
+          </tr>
+        </tbody></table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+//
+// Skeleton Loader
+// --------------------------------------------------
+
+.skeleton-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.skeleton-text {
+  display: inline-block;
+  height: $skeleton-text-height;
+  width: $skeleton-text-width;
+  background: linear-gradient(267deg, $skeleton-text-color, darken($skeleton-text-color, 8%));
+  background-size: 400% 400%;
+  border-radius: $border-radius-base;
+  animation: movingGradient 2.5s ease infinite;
+  animation-fill-mode: both;
+}
+
+.skeleton-text-sm {
+  width: $skeleton-text-width-sm;
+}
+.skeleton-text-md {
+  width: $skeleton-text-width;
+}
+.skeleton-text-xs {
+  width: $skeleton-text-width-xs;
+}
+.skeleton-text-lg {
+  width: $skeleton-text-width-lg;
+}
+
+
+.skeleton-icon {
+  display: inline-block;
+  width: $skeleton-icon-size;
+  height: $skeleton-icon-size;
+  border-radius: $border-radius-base;
+  background: linear-gradient(267deg, $skeleton-text-color, darken($skeleton-text-color, 8%));
+  background-size: 400% 400%;
+  animation: movingGradient 2.5s ease infinite;
+  animation-fill-mode: both;
+
+  &.round {
+    border-radius: 10em;
+  }
+}
+
+.skeleton-photo {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background: linear-gradient(267deg, $skeleton-text-color, darken($skeleton-text-color, 8%));
+  background-size: 400% 400%;
+  animation: movingGradient 2.5s ease infinite;
+  animation-fill-mode: both;
+}
+
+.skeleton-map {
+  height: 100%;
+  background: linear-gradient(267deg, $skeleton-text-color, darken($skeleton-text-color, 8%));
+  background-size: 400% 400%;
+  animation: movingGradient 2.5s ease infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes movingGradient {
+  0%    {background-position:0% 50%}
+  50%   {background-position:100% 50%}
+  100%  {background-position:0% 50%}
+}

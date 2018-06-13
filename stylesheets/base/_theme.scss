@@ -1,0 +1,402 @@
+
+
+//
+// Floating action button and menu
+// --------------------------------------------------
+
+// round button
+.float-action-btn {
+  position: fixed;
+  bottom: $padding-base-horizontal;
+  right: $padding-base-vertical;
+  height: 60px;
+  width: 60px;
+  z-index: 9;
+  background: $brand-primary;
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  outline: 0;
+
+  .side-panel-open & {
+    display: none;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
+  .icon-plus {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.2s ease-in;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: 16px;
+      display: block;
+      height: 26px;
+      width: 1px;
+      background: #fff;
+    }
+
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+
+// backdrop
+.float-action-container {
+  position: fixed;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: $zindex-float-action-bg;
+
+  &.open {
+    top: 0;
+    z-index: $zindex-float-action-bg;
+    background-color: rgba(#fff, 0.88);
+
+    .float-action-menu {
+      display: block;
+    }
+
+    .float-action-btn .icon-plus {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      animation: rippleIn 1s;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: fixed;
+    bottom: $padding-base-horizontal;
+    right: $padding-base-vertical;
+    width: 60px;
+    height: 60px;
+    background: $brand-primary;
+    opacity: 0;
+    border-radius: 50%;
+    animation: rippleOut 0.3s;
+  }
+}
+
+@keyframes rippleIn {
+    from {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
+
+@keyframes rippleOut {
+    0% {
+      transform: scale(100);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+}
+
+
+// menu
+.float-action-menu {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: $padding-base-vertical;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+
+  li {
+    display: block;
+    width: auto;
+    padding: 16px 22px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6em;
+    text-align: center;
+    font-size: 14px;
+    @include box-shadow(0 1px 6px 1px rgba(0,0,0,0.16));
+    animation: fadeInUp 0.2s;
+    animation-fill-mode: both;
+
+    &:nth-child(1) { animation-delay: 0.2s }
+    &:nth-child(2) { animation-delay: 0.4s }
+    &:nth-child(3) { animation-delay: 0.6s }
+  }
+}
+
+// animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.page-action-btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 68px;
+  text-align: center;
+  height: 0;
+
+  @media (min-width: $screen-sm-min) {
+    padding-left: $sidepanel-width;
+  }
+
+  .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
+//
+// Page subheader, usually back button
+// --------------------------------------------------
+
+.top-header-bar {
+  display: block;
+  height: 45px;
+  padding: 0 $padding-base-horizontal;
+  line-height: 45px;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid $gray-lighter;
+  vertical-align: middle;
+  font-family: $headings-font-family;
+  overflow: hidden;
+
+  &.header-fixed-top {
+    position: fixed;
+    top: $navbar-height + 10;
+    left: 0;
+    right: 0;
+    padding-left: $padding-base-horizontal;
+    padding-right: $padding-base-horizontal;
+    background: #fff;
+    z-index: $zindex-navbar-fixed;
+
+    @media (min-width: $screen-sm-min) {
+      left: $sidepanel-width;
+    }
+  }
+
+  .side-panel-open & {
+    top: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+//
+// Basic user info UI - photo + name
+// --------------------------------------------------
+
+.user-badge {
+  margin-bottom: $padding-base-vertical * 2;
+
+  .photo {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #ddd;
+    vertical-align: middle;
+    overflow: hidden;
+
+    @media (min-width: $screen-md-min) {
+      height: 80px;
+      width: 80px;
+      border-radius: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .name {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 2.2rem;
+    vertical-align: middle;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 3rem;
+    }
+  }
+}
+
+
+
+//
+// Edit forms section buttons
+// --------------------------------------------------
+
+.section-menu-item {
+  display: block;
+  padding: $padding-base-vertical $padding-base-horizontal;
+  margin-bottom: $padding-base-vertical * 2;
+  border-radius: $border-radius-base;
+  background-color: #fff;
+  @include box-shadow(0 0 10px 2px rgba(0,0,0,0.1));
+  text-decoration: none;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  @include user-select;
+
+  @media (min-width: $screen-md-min) {
+    padding: $padding-base-vertical * 2 $padding-base-horizontal;
+    text-align: center;
+  }
+
+  &:hover, &:focus, &:active {
+    background-color: $brand-primary;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .image {
+    height: 50px;
+    margin-right: $padding-base-horizontal * 2;
+    font-size: 14px;
+
+    @media (min-width: $screen-md-min) {
+      display: block;
+      height: 120px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      .modal & {
+        height: 80px;
+      }
+    }
+  }
+
+  .title {
+    font-family: $font-family-base-condensed;
+  }
+}
+
+
+
+//
+// Profile summary button
+// --------------------------------------------------
+
+.tab-btn {
+  position: relative;
+  padding: ($padding-base-vertical * 2) $padding-base-horizontal;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+  border: 0;
+  @include box-shadow(0 2px 5px 2px rgba(0,0,0,.125));
+  text-align: center;
+
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
+
+  &:hover {
+    .badge {
+      background: $brand-primary;
+    }
+  }
+
+  .badge {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: $padding-base-horizontal;
+    height: 32px;
+    width: 32px;
+    margin: auto;
+    padding: 0;
+    border-radius: 6em;
+    line-height: 32px;
+    text-align: center;
+
+    @media (min-width: $screen-md-min) {
+      display: block;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md-min) {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 10px;
+      height: 30px;
+    }
+  }
+}
+
+
+.form-info {
+
+  img {
+    width: 200px;
+  }
+
+  p {
+    opacity: 0.75;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

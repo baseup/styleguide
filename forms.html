@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+</html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/example.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+
+
+
+  <nav class="navbar navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">BaseUp Style Guide</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 ">
+        <div class="menu">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="color.html">Color</a>
+              <ul>
+                <li><a href="color.html#primary">Primary colors</a></li>
+                <li><a href="color.html#secondary">Secondary colors</a></li>
+                <li><a href="color.html#neutrals">Neutrals colors</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="grids.html">Grid System</a>
+              <ul>
+                <li><a href="grids.html#responsive-columns">Responsive Columns</a></li>
+                <li><a href="grids.html#nesting">Nesting</a></li>
+                <li><a href="grids.html#no-gutters">No gutters</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="typography.html">Typography</a>
+              <ul>
+                <li><a href="typography.html#typefaces">Typefaces</a></li>
+                <li><a href="typography.html#paragraphs">Paragraphs</a></li>
+                <li><a href="typography.html#headings">Headings</a></li>
+                <li><a href="typography.html#lead">Lead copy</a></li>
+                <li><a href="typography.html#blockquotes">Blockquotes</a></li>
+                <li><a href="typography.html#inline-text">Inline Text</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item active">
+              <a href="forms.html">Forms</a>
+              <ul>
+                <li><a href="forms.html#form-controls">Form controls</a></li>
+                <li><a href="forms.html#form-layouts">Form Layouts</a></li>
+                <li><a href="forms.html#buttons">Buttons</a></li>
+                <li><a href="forms.html#textual-inputs">Textual Inputs</a></li>
+                <li><a href="forms.html#checkboxes">Checkboxes and Radios</a></li>
+                <li><a href="forms.html#static-controls">Static Controls</a></li>
+                <li><a href="forms.html#help-text">Help Text</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="table.html">Tables</a>
+              <ul>
+                <li><a href="table.html#basic">Basic</a></li>
+                <li><a href="table.html#striped">Striped Rows</a></li>
+                <li><a href="table.html#bordered">Bordered Table</a></li>
+                <li><a href="table.html#hoverable">Hoverable Rows</a></li>
+                <li><a href="table.html#condensed">Condensed Table</a></li>
+                <li><a href="table.html#responsive">Responsive Table</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="modal.html">Modal</a>
+              <ul>
+                <li><a href="modal.html#components">Components</a></li>
+                <li><a href="modal.html#live">Live Demo</a></li>
+                <li><a href="modal.html#usage">Usage</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <a href="utilities.html">Utilities</a>
+              <ul>
+                <li><a href="utilities.html#display">Display Property</a></li>
+                <li><a href="utilities.html#borders">Borders</a></li>
+                <li><a href="utilities.html#spacing">Spacing</a></li>
+                <li><a href="utilities.html#flexbox">Flexbox</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-lg-9">
+        <h1>Form Elements</h1>
+        <hr>
+
+        <h2 id="form-controls">Form controls <a href="#form-controls"><i class="ti-link"></i></a></h2>
+        <p>Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
+        <p>Below is a complete list of the specific form controls and the classes that customize them. Additional documentation is available for each group.</p>
+
+        <table class="table table-responsive table-bordered">
+          <tbody><tr>
+            <th>Classes</th>
+            <th>Used for</th>
+            <th>Supported variations</th>
+          </tr>
+          <tr>
+            <td rowspan="3"><code>.form-group</code></td>
+            <td>Any group of form controls</td>
+            <td>Use with any block-level element like
+              <br><code>&lt;fieldset&gt;<code> or <code>&lt;div&gt;</code></code></code></td>
+          </tr>
+          <tr>
+            <td>Select menus</td>
+            <td>multiple, size</td>
+          </tr>
+          <tr>
+            <td>Textareas</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><code>.form-control</code></td>
+            <td>Textual inputs</td>
+            <td>text, password, datetime-local, date, month, time,<br>
+              week, number, email, url, search, tel, color</td>
+          </tr>
+          <tr>
+            <td><code>.form-control-file</code></td>
+            <td>File inputs</td>
+            <td>file</td>
+          </tr>
+          <tr>
+            <td><code>.form-check</code></td>
+            <td>Checkboxes and radios</td>
+            <td>N/A</td>
+          </tr>
+        </tbody></table>
+        <br>
+
+        <h2 id="form-layouts">Form layouts <a href="#form-layouts"><i class="ti-link"></i></a></h2>
+        <p>Forms will by default stack vertically since all form controls applies <code>display: block</code> and <code>width: 100%</code>.</p>
+        <h3>Form groups</h3>
+        <p>The <code>.form-group</code> class is the easiest way to add some structure to forms.
+          Its only purpose is to provide <code>margin-bottom</code> around a label and control pairing.
+          As a bonus, since it’s a class you can use it with <code>&lt;fieldset&gt;</code>, <code>&lt;div&gt;</code>, or nearly any other element.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/fdnyv3qf/1/embed/result,html/"></script>
+
+        <h3>Inline forms</h3>
+        <p>Use the <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/46uwd0bh/1/embed/result,html/"></script>
+        <p>Custom form controls and selects are also supported.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/wod6q3bu/1/embed/result,html/"></script>
+
+        <h3>Horizontal form</h3>
+        <p>Use the <em>grid</em> classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn't have to be a </p><form>).
+          Doing so changes <code>.form-groups</code> to behave as grid rows, so no need for <code>.row</code>.<p></p>
+        <script async="" src="//jsfiddle.net/markbaseup/0m1yun7y/1/embed/result,html/"></script>
+        <br>
+        <br>
+
+        <h2 id="buttons">Buttons <a href="#buttons"><i class="ti-link"></i></a></h2>
+        <p>Our buttons come with different styles and sizes.
+          We create a button by adding <code>.btn</code> class in a <code>&lt;button&gt;</code> element.
+          However, you can also use this class on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements
+          (though some browsers may apply a slightly different rendering).</p>
+        <script async src="//jsfiddle.net/0we7zdx1/1/embed/result,html/"></script>
+
+        <h3>Button sizes</h3>
+        <p>Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+        <script async src="//jsfiddle.net/0we7zdx1/2/embed/result,html/"></script>
+        <p>You can also create block level buttons — those that span the full width of a parent by adding <code>.btn-block</code>.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/7xq91w0a/2/embed/result,html/"></script>
+        <br>
+
+        <h3>Floating action buttons</h3>
+        <p>A floating action button that represents the primary action in a page.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/b3yn84ya/3/embed/result,html/"></script>
+        <p>It may also contain more related actions.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/h6t0dfsm/2/embed/result,html/"></script>
+        <br>
+        <br>
+
+        <h2 id="textual-input">Textual inputs <a href="#textual-input"><i class="ti-link"></i></a></h2>
+        <p>Here are examples of <code>.form-control</code> applied to each textual HTML5 <code>&lt;input&gt;</code> <code>type</code>.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/gy7mqasj/1/embed/result,html/"></script>
+        <br>
+        <br>
+
+        <h2 id="checkboxes-and-radios">Checkboxes and radios <a href="#checkboxes-and-radios"><i class="ti-link"></i></a></h2>
+        <p>Default checkboxes and radios are improved upon with the help of <code>.checkbox</code> and <code>.radio</code> classes.
+          Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+        <p>Disabled checkboxes and radios are supported, you’ll need to add the <code>.disabled</code> class to the parent <code>.checkbox</code>.</p>
+        <h3>Default (stacked)</h3>
+        <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code>.checkbox</code> and <code>.radio</code></p>
+        <script async="" src="//jsfiddle.net/markbaseup/9kaj7qua/1/embed/result,html/"></script>
+        <script async="" src="//jsfiddle.net/markbaseup/0v5gmek5/1/embed/result,html/"></script>
+
+        <h3>Inline</h3>
+        <p>Group checkboxes or radios on the same horizontal row by adding <code>.checkbox-inline</code> and <code>.radio-inline</code></p>
+        <script async="" src="//jsfiddle.net/markbaseup/r94yv7Lr/1/embed/result,html/"></script>
+        <script async="" src="//jsfiddle.net/markbaseup/hwvcbg1f/1/embed/result,html/"></script>
+        <br>
+        <br>
+
+        <h2 id="static">Static controls <a href="#static"><i class="ti-link"></i></a></h2>
+        <p>When you need to place plain text next to a form label within a form, use the .form-control-static class on an element of your choice.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/bxzhta06/1/embed/result,html/"></script>
+        <br>
+        <br>
+
+        <h2 id="help-text">Help text <a href="#help-text"><i class="ti-link"></i></a></h2>
+        <p>Block-level help text in forms can be created using <code>.help-block</code>.</p>
+        <script async="" src="//jsfiddle.net/markbaseup/7s5L6z6d/1/embed/result,html/"></script>
+
+      </form></div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+//
+// Spacing - Margins and Paddings
+// --------------------------------------------------
+
+// (default size) m-t-md, m-b-md, m-l-md, m-r-md, m-md, m-x-md, m-y-md
+@include make-spacing(md, $padding-base-vertical, $padding-base-horizontal);
+// (small) m-t-sm, m-b-sm, m-l-sm, m-r-sm, m-sm, m-x-sm, m-y-sm
+@include make-spacing(sm, $padding-small-vertical, $padding-small-horizontal);
+// (extra-small) m-t-xs, m-b-xs, m-l-xs, m-r-xs, m-xs, m-x-xs, m-y-xs
+@include make-spacing(xs, $padding-xs-vertical, $padding-xs-horizontal);
+// (large) m-t-lg, m-b-lg, m-l-lg, m-r-lg, m-lg, m-x-lg, m-y-lg
+@include make-spacing(lg, $padding-large-vertical, $padding-large-horizontal);
+// (xlarge) m-t-xl, m-b-xl, m-l-xl, m-r-xl, m-xl, m-x-xl, m-y-xl
+@include make-spacing(xl, $padding-xl-vertical, $padding-xl-horizontal);

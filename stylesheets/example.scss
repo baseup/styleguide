@@ -1,0 +1,91 @@
+@import 'base/variables';
+
+.headings-example {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+.menu {
+  .list-group {
+
+
+  }
+
+  .list-group-item {
+    border: none;
+
+    &.active {
+      background: none;
+
+      > a {
+        color: $brand-primary;
+      }
+
+      > ul {
+        display: block;
+      }
+    }
+
+    &:hover {
+      background: none;
+
+      > a {
+        color: $brand-primary;
+      }
+    }
+
+    > ul {
+      display: none;
+
+      li a {
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.palette {
+  display: inline-block;
+  width: 280px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 20px;
+
+  .color {
+    height: 160px;
+    position: relative;
+
+    .text {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+
+      small {
+        opacity: 0.71;
+      }
+    }
+  }
+
+  .details {
+    list-style: none;
+    padding: 15px;
+    background: #efefef;
+
+    li {
+      .name {
+        text-transform: uppercase;
+        display: inline-block;
+        opacity: 0.6;
+        font-size: 14px;
+      }
+
+      .value {
+        float: right;
+      }
+    }
+  }
+}

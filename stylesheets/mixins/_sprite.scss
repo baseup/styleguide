@@ -1,0 +1,43 @@
+$carret-down-small: -0px -0px 19px 14px;
+$graph: -0px -14px 30px 30px;
+$briefcase: -0px -44px 30px 30px;
+$chevron-left: -0px -74px 30px 30px;
+$chevron-right: -0px -104px 30px 30px;
+$gear: -0px -134px 30px 30px;
+$calendar: -0px -164px 30px 30px;
+$image: -0px -194px 30px 30px;
+$schedules: -0px -224px 30px 30px;
+$shop: -0px -254px 30px 30px;
+$user: -0px -284px 30px 30px;
+$users: -0px -314px 30px 30px;
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}

@@ -1,0 +1,17 @@
+@mixin make-spacing($size, $x, $y) {
+  @each $prop, $abbrev in (margin: m, padding: p) {
+    .#{$abbrev}-#{$size} { #{$prop}: $y $x !important; }
+    .#{$abbrev}-t-#{$size} { #{$prop}-top: $x !important; }
+    .#{$abbrev}-b-#{$size} { #{$prop}-bottom: $x !important; }
+    .#{$abbrev}-l-#{$size} { #{$prop}-left: $y !important; }
+    .#{$abbrev}-r-#{$size} { #{$prop}-right: $y !important; }
+    .#{$abbrev}-x-#{$size} {
+      #{$prop}-left: $x !important;
+      #{$prop}-right: $x !important;
+    }
+    .#{$abbrev}-y-#{$size} {
+      #{$prop}-top: $y !important;
+      #{$prop}-bottom: $y !important;
+    }
+  }
+}

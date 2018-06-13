@@ -1,0 +1,49 @@
+.headings-example h1, .headings-example h2, .headings-example h3, .headings-example h4, .headings-example h5, .headings-example h6 {
+  margin: 0; }
+
+.menu .list-group-item {
+  border: none; }
+  .menu .list-group-item.active {
+    background: none; }
+    .menu .list-group-item.active > a {
+      color: #2696DF; }
+    .menu .list-group-item.active > ul {
+      display: block; }
+  .menu .list-group-item:hover {
+    background: none; }
+    .menu .list-group-item:hover > a {
+      color: #2696DF; }
+  .menu .list-group-item > ul {
+    display: none; }
+    .menu .list-group-item > ul li a {
+      display: block;
+      padding: 5px; }
+
+.palette {
+  display: inline-block;
+  width: 280px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 20px; }
+  .palette .color {
+    height: 160px;
+    position: relative; }
+    .palette .color .text {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center; }
+      .palette .color .text small {
+        opacity: 0.71; }
+  .palette .details {
+    list-style: none;
+    padding: 15px;
+    background: #efefef; }
+    .palette .details li .name {
+      text-transform: uppercase;
+      display: inline-block;
+      opacity: 0.6;
+      font-size: 14px; }
+    .palette .details li .value {
+      float: right; }

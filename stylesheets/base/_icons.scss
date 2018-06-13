@@ -1,0 +1,23 @@
+@import "mixins/sprite";
+.icon {
+  background-image: url('../images/sprite.png');
+}
+
+i.icon{
+  width: 22px;
+  height: 25px;
+  display: inline-block;
+
+  &.icon-schedule   { @include sprite($schedules) }
+  &.icon-calendar   { @include sprite($calendar) }
+  &.icon-briefcase  { @include sprite($briefcase) }
+  &.icon-users      { @include sprite($users) }
+  &.icon-user       { @include sprite($user) }
+  &.icon-shop       { @include sprite($shop) }
+  &.icon-graph      { @include sprite($graph) }
+  &.icon-image          { @include sprite($image) }
+  &.icon-gear           { @include sprite($gear) }
+  &.icon-chevron-right  { @include sprite($chevron-right) }
+  &.icon-chevron-left   { @include sprite($chevron-left) }
+
+}

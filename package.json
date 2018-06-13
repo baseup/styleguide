@@ -1,0 +1,30 @@
+{
+  "name": "baseup-styles",
+  "version": "1.0.0",
+  "description": "Baseup SASS stylesheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/baseup/baseup-styles.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "baseup team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baseup/baseup-sass/issues"
+  },
+  "homepage": "https://github.com/baseup/baseup-sass#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1"
+  }
+}

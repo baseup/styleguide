@@ -1,0 +1,84 @@
+
+.switch {
+  position: relative;
+  width: $switch-width;
+  @include user-select;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+// switch container
+.switch-toggle {
+  display: block;
+  height: $switch-height;
+  padding: 0;
+  border: 2px solid $switch-border;
+  border-radius: $switch-height;
+  background-color: $switch-bg;
+  line-height: $switch-height;
+  transition: background-color 0.3s ease-in;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+// switch knob
+.switch-toggle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: $switch-width - $switch-height;
+    display: block;
+    width: $switch-height;
+    height: $switch-height;
+    margin: 0px;
+    background: $switch-bg;
+    border: 2px solid $switch-border;
+    border-radius: $switch-height;
+    transition: all 0.3s ease-in;
+}
+
+// label ON/OFF
+.switch-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: $switch-height;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+
+  &.switch-label-on {
+    left: 8px;
+    opacity: 0;
+    color: $switch-active-color;
+  }
+
+  &.switch-label-off {
+    right: 8px;
+    opacity: 1;
+    color: $switch-color;
+  }
+}
+
+
+.switch-checkbox:checked + .switch-toggle {
+  background-color: $switch-active-bg;
+}
+
+.switch-checkbox:checked + .switch-toggle, .switch-checkbox:checked + .switch-toggle:before {
+  border-color: $switch-active-bg;
+}
+.switch-checkbox:checked + .switch-toggle:before {
+  right: 0px;
+}
+
+.switch-checkbox:checked + .switch-toggle + .switch-label.switch-label-on {
+  opacity: 1;
+}
+.switch-checkbox:checked + .switch-toggle + .switch-label.switch-label-on + .switch-label.switch-label-off {
+  opacity: 0;
+}
