@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300|Roboto+Condensed:300,400,500" rel="stylesheet" type="text/css">
 </head>
 
@@ -11,8 +11,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/example.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
 
 
@@ -32,7 +32,7 @@
       <div class="col-md-4 col-lg-3 ">
         <div class="menu">
           <ul class="list-group">
-            <li class="list-group-item">
+            <li class="list-group-item active">
               <a href="color.html">Color</a>
               <ul>
                 <li><a href="color.html#primary">Primary colors</a></li>
@@ -40,7 +40,7 @@
                 <li><a href="color.html#neutrals">Neutrals colors</a></li>
               </ul>
             </li>
-            <li class="list-group-item active">
+            <li class="list-group-item">
               <a href="grids.html">Grid System</a>
               <ul>
                 <li><a href="grids.html#responsive-columns">Responsive Columns</a></li>
@@ -104,90 +104,145 @@
       </div>
 
       <div class="col-md-8 col-lg-9">
-        <h1 id="grid-system">Grid System</h1>
+        <h1 id="color">Color</h1>
         <hr>
 
-        <h2 id="how-it-works">How it works <a href="#how-it-works"><i class="ti-link"></i></a></h2>
-        <p>Our grid system is composed of a 12 flexible columns with a 30px gutter in-between columns.
-          It uses a series of containers, rows, and columns to layout and align content.
-          It’s built with flexbox and is fully responsive.</p>
-        <p>Here's an example at how the grid comes together:</p>
-        <script async src="//jsfiddle.net/376kroLe/4/embed/result/"></script>
-        <br>
-        <br>
-        <p>Each grid columns have a <code>15px</code> padding on each side that results to a <code>30px</code> gutter between columns and a <code>15px</code> gutter on the edges.</p>
-        <script async src="//jsfiddle.net/91nr6Lov/embed/result/"></script>
+        <h2 id="primary">Primary Color Palette <a href="#primary"><i class="ti-link"></i></a></h2>
+
+        <div class="palette">
+          <div class="color" style="background: #2696DF;">
+            <span class="text" style="color: #fff;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">Summer Sky</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#2696DF</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">38, 150, 223</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="palette">
+          <div class="color" style="background: #1B6FA5;">
+            <span class="text" style="color: #fff;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">Lochmara</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#1B6FA5</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">27, 111, 165</span>
+            </li>
+          </ul>
+        </div>
+
         <br>
         <br>
 
-        <h2 id="responsive-columns">Responsive Columns <a href="#responsive-columns"><i class="ti-link"></i></a></h2>
-        <p>The grid system includes five tiers of predefined classes for building complex responsive layouts.
-          Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
+        <h2 id="secondary">Secondary Color Palette <a href="#secondary"><i class="ti-link"></i></a></h2>
 
-        <table class="table table-bordered table-striped">
-          <tr>
-            <th>&nbsp;</th>
-            <th>Class prefix</th>
-            <th>Viewport width</th>
-          </tr>
-          <tr>
-            <td>Extra small</td>
-            <td><code>.col-</code></td>
-            <td>&lt;576px</td>
-          </tr>
-          <tr>
-            <td>Small</td>
-            <td><code>.col-sm-</code></td>
-            <td>≥576px</td>
-          </tr>
-          <tr>
-            <td>Medium</td>
-            <td><code>.col-md-</code></td>
-            <td>≥768px</td>
-          </tr>
-          <tr>
-            <td>Large</td>
-            <td><code>.col-lg-</code></td>
-            <td>≥992px</td>
-          </tr>
-          <tr>
-            <td>Extra Large</td>
-            <td><code>.col-xl-</code></td>
-            <td>≥1200px</td>
-          </tr>
-        </table>
-        <br>
-        <h3>All breakpoints</h3>
-        <p>For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, just specify <code>.col</code> and it fill in the remaining space.</p>
-        <script async="" src="//jsfiddle.net/markbaseup/zm7np3vL/1/embed/result,html/"></script>
-        <br>
+        <div class="palette">
+          <div class="color" style="background: #F6A623;">
+            <span class="text" style="color: #fff;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">Lightning Yellow</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#F6A623</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">246, 166, 35</span>
+            </li>
+          </ul>
+        </div>
 
-        <h3>Mix and match</h3>
-        <p>Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
-        <script async="" src="//jsfiddle.net/markbaseup/c3ew2yuv/1/embed/result,html/"></script>
-        <br>
+        <h2 id="secondary">Neutral Colors <a href="#neutrals"><i class="ti-link"></i></a></h2>
 
-        <h2 id="nesting">Nesting <a href="#nesting"><i class="ti-link"></i></a></h2>
-        <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
-        <script async="" src="//jsfiddle.net/1hfwo1gf/2/embed/result,html/"></script>
-        <br>
+        <div class="palette">
+          <div class="color" style="background: #E8E7E7;">
+            <span class="text" style="color: #333;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">White Lilac</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#E8E7E7</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">232, 231, 231</span>
+            </li>
+          </ul>
+        </div>
 
-        <h2 id="no-gutters">No gutters <a href="#no-gutters"><i class="ti-link"></i></a></h2>
-        <p>The gutters between columns in our predefined grid classes can be removed with <code>.no-gutters</code>.
-          This removes the negative <strong>margins</strong> from <code>.row</code> and the horizontal <strong>padding</strong> from all immediate children columns.</p>
+        <div class="palette">
+          <div class="color" style="background: #4A4A4A;">
+            <span class="text" style="color: #fff;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">Armadillo</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#4A4A4A</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">74, 74, 74</span>
+            </li>
+          </ul>
+        </div>
 
-        <p>Here’s how it looks. Note you can continue to use this with all other predefined grid classes (including column widths, responsive tiers, reorders, and more).</p>
-        <script async="" src="//jsfiddle.net/markbaseup/6u5egnmf/1/embed/result,html/"></script>
-        <br>
-        <br>
+        <div class="palette">
+          <div class="color" style="background: #F8F8F8;">
+            <span class="text" style="color: #333;">A <small>A</small></span>
+          </div>
+          <ul class="details">
+            <li>
+              <span class="name">Name</span>
+              <span class="value">Desert Storm</span>
+            </li>
+            <li>
+              <span class="name">Hex</span>
+              <span class="value">#F8F8F8</span>
+            </li>
+            <li>
+              <span class="name">RGB</span>
+              <span class="value">248, 248, 248</span>
+            </li>
+          </ul>
+        </div>
 
       </div>
 
     </div>
   </div>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="javascripts/bootstrap.min.js"></script>
+
+  
 
 
 </body>
