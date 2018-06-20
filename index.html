@@ -3,35 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300|Roboto+Condensed:300,400,500" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/example.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/mustache.js/mustache.min.js"></script>
+</head>
 
-
-
-  <nav class="navbar navbar-static-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">BaseUp Style Guide</a>
-      </div>
-    </div><!-- /.container-fluid -->
-  </nav>
+<body>
+  <nav class="navbar navbar-static-top" id="header"></nav>
 
   <div class="container">
     <div class="row">
 
       <div class="col-md-4 col-lg-3 ">
-        <div class="menu">
-          <ul class="list-group">
+        <div class="menu" id="menu">
+          <!-- <ul class="list-group">
             <li class="list-group-item">
               <a href="grids.html">Grid System</a>
               <ul>
@@ -91,7 +78,7 @@
                 <li><a href="utilities.html#flexbox">Flexbox</a></li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
 
@@ -104,9 +91,6 @@
     </div>
   </div>
 
-  
-  
-
-
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+{
+  "name": "baseup-styles",
+  "description": "Baseup SASS stylesheets",
+  "main": "index.js",
+  "authors": [
+    "baseup team"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sass"
+  ],
+  "homepage": "https://github.com/baseup/styleguide",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mustache.js": "mustache#^2.3.0",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,12 @@
+<ul class="list-group">
+  {{#menu}}
+  <li class="list-group-item {{#isActive}}active{{/isActive}}">
+    <a href="{{link}}">{{name}}</a>
+    <ul>
+      {{#sub}}
+      <li><a href="{{link}}">{{name}}</a></li>
+      {{/sub}}
+    </ul>
+  </li>
+  {{/menu}}
+</ul>
