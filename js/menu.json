@@ -148,6 +148,20 @@
     ]
   },
   {
+    "name": "Toggles",
+    "link": "toggle.html",
+    "sub": [
+      {
+        "name": "Behavior and Style",
+        "link": "toggle.html#behavior"
+      },
+      {
+        "name": "Toogle vs Checkbox",
+        "link": "toggle.html#togglevscheckbox"
+      }
+    ]
+  },
+  {
     "name": "Utilities",
     "link": "utilities.html",
     "sub": [

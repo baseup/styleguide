@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+</html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Toggle - BaseUp Styleguide</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/example.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/mustache.js/mustache.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-static-top" id="header"></nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 ">
+        <div class="menu" id="menu">
+        </div>
+      </div>
+
+      <div class="col-md-8 col-lg-9">
+        <h1>Toggles</h1>
+        <hr>
+
+        <h2 id="behavior">Behavior and Style <a href="#behavior"><i class="ti-link"></i></a></h2>
+        <p>Use toggles when your intent is to quickly switch between enabled or disabled states (on or off, just like a physical switch).
+          Toggles should never require users to press a button to apply their action. This is because toggle is already a button.</p>
+        <p>You should only use toggles on settings that need to take effect instantaneously. If a setting requires a button press before it can take effect, you should use a checkbox instead.</p>
+        <script async src="//jsfiddle.net/w98s14fq/8/embed/result,html/"></script>
+        <br><br>
+
+        <h2 id="togglevscheckbox">Toggle vs Checkbox <a href="#togglevscheckbox"><i class="ti-link"></i></a></h2>
+        <p>A checkbox does not apply a setting at an instant like a switch. Instead, it’s accompanied by a submit button and takes effect after the user presses it.</p>
+        <p>Checkboxes are useful for applying a batch of settings. With switches, users have to wait for the system to apply a setting one by one. Checkboxes allow the system to handle multiple setting changes at one time.</p>
+        <script async src="//jsfiddle.net/1uqpnkty/embed/result/"></script>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
