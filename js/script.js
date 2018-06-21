@@ -1,6 +1,7 @@
 (function($) {
   $(document).ready(function() {
-    var path = (window.location.pathname).substring(1);
+    var pathname = window.location.pathname;
+    var path = pathname.match(/([^\/]*)\/*$/)[1];
 
     $.getJSON('js/menu.json', function(data) {
       for (var i = 0; i < data.length; i++) {
