@@ -1,3 +1,13 @@
+.navbar {
+  background: #2696DF;
+  color: #fff; }
+  .navbar .navbar-brand {
+    color: #fff; }
+    .navbar .navbar-brand img {
+      display: inline-block;
+      height: 100%;
+      margin-right: 6px; }
+
 .headings-example h1, .headings-example h2, .headings-example h3, .headings-example h4, .headings-example h5, .headings-example h6 {
   margin: 0; }
 

@@ -1,5 +1,1 @@
-<div class="container-fluid">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="/">BaseUp Style Guide</a>
-  </div>
-</div>
+<a class="navbar-brand" href="#"><img src="images/baseup-logo.png" alt="Brand Logo"> BaseUp Style Guide</a>
