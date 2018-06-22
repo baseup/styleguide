@@ -22,6 +22,27 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #F6A623 !default;
 $brand-danger:          #d9534f !default;
 
+$primary:       $brand-primary !default;
+$secondary:     $gray-600 !default;
+$success:       $brand-success !default;
+$info:          $brand-info !default;
+$warning:       $brand-warning !default;
+$danger:        $brand-danger !default;
+$light:         $gray-light !default;
+$dark:          $gray-dark !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
 
 //== Scaffolding
 //
@@ -816,23 +837,18 @@ $well-bg:                     #fff !default;
 $well-border:                 darken($well-bg, 7%) !default;
 
 
-//== Badges
-//
-//##
+// Badges
 
-$badge-color:                 #fff !default;
-//** Linked badge text color on hover
-$badge-link-hover-color:      #fff !default;
-$badge-bg:                    $gray-light !default;
+$badge-font-size:                   75% !default;
+$badge-font-weight:                 $font-weight-bold !default;
+$badge-padding-y:                   .25em !default;
+$badge-padding-x:                   .4em !default;
+$badge-border-radius:               $border-radius !default;
 
-//** Badge text color in active nav link
-$badge-active-color:          $link-color !default;
-//** Badge background color in active nav link
-$badge-active-bg:             #fff !default;
-
-$badge-font-weight:           bold !default;
-$badge-line-height:           1 !default;
-$badge-border-radius:         20px !default;
+$badge-pill-padding-x:              .6em !default;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          10rem !default;
 
 
 //== Breadcrumbs
