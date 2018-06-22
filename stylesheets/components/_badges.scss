@@ -12,7 +12,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  @include border-radius($badge-border-radius);
+  @include border-radius(5px);
 
   // Empty badges collapse automatically
   &:empty {
@@ -44,3 +44,4 @@
   .badge-#{$color} {
     @include badge-variant($value);
   }
+}

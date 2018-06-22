@@ -18,9 +18,11 @@
 @import "mixins/user-select";
 @import "mixins/spacing";
 @import "mixins/breakpoint";
+@import "mixins/hover";
 
 // Components
 @import "mixins/alerts";
+@import "mixins/badges";
 @import "mixins/buttons";
 @import "mixins/panels";
 @import "mixins/pagination";
