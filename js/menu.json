@@ -162,6 +162,20 @@
     ]
   },
   {
+    "name": "Tooltips",
+    "link": "tooltips.html",
+    "sub": [
+      {
+        "name": "Placement",
+        "link": "tooltips.html#placement"
+      },
+      {
+        "name": "Usage",
+        "link": "tooltips.html#usage"
+      }
+    ]
+  },
+  {
     "name": "Utilities",
     "link": "utilities.html",
     "sub": [

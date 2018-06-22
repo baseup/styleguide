@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+</html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Tooltips - BaseUp Styleguide</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/example.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/mustache.js/mustache.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-static-top" id="header"></nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 ">
+        <div class="menu" id="menu">
+        </div>
+      </div>
+
+      <div class="col-md-8 col-lg-9">
+        <h1>Tooltips</h1>
+        <hr>
+
+        <p>Tooltips are used to identify or add information to an element.
+          You can use tooltips to show additional information to a button,
+          display alt text of an image, or simply showing a label of an icon.</p>
+
+        <h2 id="placement">Placement <a href="#placement"><i class="ti-link"></i></a></h2>
+        <p>Four positioning options are available: <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>. Besides that, <code>auto</code> option may be used to detect a position that fits the component on the screen.</p>
+        <img src="images/tooltips.png" alt="Tooltip placement" style="max-width:500px;">
+        <script async src="//jsfiddle.net/zfgj3roe/embed/html/"></script>
+        <br><br>
+
+        <h2 id="usage">Usage <a href="#usage"><i class="ti-link"></i></a></h2>
+        <p>Our Tooltips rely on the <code>TooltipModule</code> of <code>ngx-bootstrap</code> library for positioning and other functionality.
+          Tooltips are opt-in for performance reasons, so you must initialize them yourself. See advance usage below.</p>
+
+        <h3>Manual Trigger</h3>
+        <p>You can manage tooltip using its <code>show()</code>, <code>hide()</code> and <code>toggle()</code> methods. If you want to manage tooltip's state manually, use <code>triggers=""</code></p>
+        <img src="images/tooltip-manual.png" alt="Manual Trigger" style="max-width:240px;">
+        <script async src="//jsfiddle.net/ux6tv7ng/1/embed/html/"></script>
+        <br><br>
+
+        <h3>Dynamic HTML</h3>
+        <p>By using <code>[innerHtml]</code> inside <code>ng-template</code> you can display any dynamic html.</p>
+        <img src="images/tooltip-html.png" alt="Dynamic HTML" style="max-width:240px;">
+        <script async src="//jsfiddle.net/kqwo6eby/1/embed/html/"></script>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
